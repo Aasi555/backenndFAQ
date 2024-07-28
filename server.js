@@ -27,7 +27,7 @@ app.get("/fetchfromdatabase", async (req, res) => {
     res.json(data);
   } catch (error) {
     console.log("Ошибка сервера при получении данных", error.message);
-    res.status(500).send("Server error while fetching data/Ошибка сервера при получении данных");
+    res.status(500).send("Server error while fetching data");
   }
 });
 
